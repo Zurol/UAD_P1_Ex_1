@@ -15,15 +15,20 @@ def imprimeFibonacci():
     suma = 0
 
     while (numeroFib <= tope):
-        print ("numeroFib{0} - {1}".format(numeroFib, numeroViejo))
+        #print ("numeroFib{0} - {1}".format(numeroFib, numeroViejo))
+
+        if ( not (numeroFib > min and numeroFib < max ) ):
+            print ("{0}".format(numeroFib, numeroViejo))
 
         if numeroFib == 0:
             numeroViejo = numeroFib
             numeroFib += 1
 
         else :
+
+            #numeroFib += numeroViejo
+            numeroFib = numeroViejo + numeroFib
             numeroViejo = numeroFib
-            numeroFib += numeroViejo
 
 
 
