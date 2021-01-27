@@ -11,7 +11,7 @@ def imprimeFibonacci():
 
 
     numeroFib = 0
-    numeroViejo = None
+    numeroViejo = 0
     suma = 0
 
     while (numeroFib <= tope):
@@ -22,13 +22,14 @@ def imprimeFibonacci():
 
         if numeroFib == 0:
             numeroViejo = numeroFib
-            numeroFib += 1
+            numeroFib = 1
 
         else :
 
             #numeroFib += numeroViejo
-            numeroFib = numeroViejo + numeroFib
+            suma = numeroViejo + numeroFib
             numeroViejo = numeroFib
+            numeroFib = suma
 
 
 
